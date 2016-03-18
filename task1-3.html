@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：三栏式布局</title>
+	<style>
+		#main{
+			margin: 20px 20px 0 20px;
+			padding: 20px;
+			/*width: 100%;*/
+			background-color: #eee;
+			border:1px solid #999;
+			height: auto;
+		}
+		#teamLogo,#teamIntro,#teamMember{
+			padding: 20px;
+			background-color: #eee;
+			border:1px solid #999;
+		}
+		#teamLogo{
+			width: 158px;
+			height: 80px;			
+			float: left;
+			padding: 20px;
+		}
+		#teamIntro{	
+			margin-left: 220px;
+			margin-right: 140px;
+			height: auto;
+			padding: 20px;
+		}
+		#teamIntro p{
+			text-indent: 2em;
+		}
+		#teamMember{
+			float: right;
+			width: 78px;
+			height: auto;
+		}
+		#logoImg{
+			width: 80px;
+			height: 80px;
+			border: 1px solid #999;
+			background-color: #DCDCDC;
+			text-align: center;
+			float: left;
+		}
+		#teamName{
+			margin-left: 100px;
+		}
+		#teamMember img:last-child{
+			margin-bottom: 0px !important;
+		}
+		#teamMember img{
+			width: 80px;
+			height: 80px;
+			margin-bottom: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="teamLogo">
+			<img id="logoImg" src="imgs/1.jpg">
+			<div id="teamName">sse1308</div>
+		</div>
+		
+		<div id="teamMember">
+			<img src="imgs/1.jpg">
+			<img src="imgs/1.jpg">
+			<img src="imgs/1.jpg">
+			<img src="imgs/1.jpg">
+			<img src="imgs/1.jpg">
+		</div>
+
+		<div id="teamIntro">
+			团队简单介绍如下：<br>
+			<p>我们的团队名称为sse1308，来历是什么呢？其实说起来也比较简单，我们五个成员都是就读于西安电子科技大学的研究生，而且在同一个老师名下，sse1308是我们实验室的一个代号，组长是我们的研二学姐，带领我们组成了这个团队。我们希望能够借助百度大量前端技术学院这个平台，积累更多的前端知识，帮助我们更加有趣、高效、系统地学习web前端技术。</p>
+			团队成员介绍如下：<br>
+			<p>温艳琪：组长。就读于西安电子科技大学，研究生，计算机软件体系结构专业，熟悉使用HTML/CSS，能够编写兼容主流浏览器的页面布局 熟悉原生JS，jQuery开发 了解HTML5、CSS3新特性 ，了解AngularJS、Node.js、less。</p>
+			<p>王诗琪：就读于西安电子科技大学，研究生，软件工程专业，能够做一些简单的HTML,CSS。js与jQuery正在学习中。</p>
+			<p>吕蓉：就读于西安电子科技大学，研究生，计算机软件与理论专业，有一年html，css，javascript经验，能够做难度适中的页面。</p>
+			<p>任娜娜：就读于西安电子科技大学，研究生，软件工程专业，有一年的前端经验，熟练掌握html，css，jquery等，了解bootstrap框架的应用，做过一些项目，积累了一些经验。</p>
+			<p>张妮：就读于西安电子科技大学，研究生，计算机技术专业，能做一些简单的页面，对javascript比较有兴趣。</p>
+
+		</div>
+		<div style="clear:both"></div><!--清除浮动，使父元素高度自适应-->
+		
+	</div>
+</body>
+</html>
