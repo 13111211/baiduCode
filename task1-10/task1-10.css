@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.flex-container{
+	border: 1px solid gray;
+	padding: 20px 20px 0px 20px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;/*两端对齐，项目之间的间隔都相等*/
+	align-items:center;/*垂直居中*/
+}
+.div1,.div2,.div3,.div4{
+	width: 150px;
+	box-sizing: border-box;
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+}
+.div1{
+	height: 120px;
+}
+.div2{
+	height: 100px;
+}
+.div3{
+	height: 40px;
+}
+.div4{
+	height: 200px;
+	border: 1px solid #0f0;
+}
+@media(max-width: 640px){
+	.flex-container{
+		align-items:flex-start;/*交叉轴的起点对齐*/
+	}
+	.div4{
+		order:-1;/*第四个元素排在最前面*/
+	}
+}
